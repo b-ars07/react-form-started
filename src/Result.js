@@ -5,7 +5,7 @@ import { useData } from './DataContext'
 import { Link } from 'react-router-dom'
 import { InsertDriveFile } from '@material-ui/icons'
 import { PrimaryButton } from './components/PrimaryButton'
-import { Swal } from 'sweetalert2'
+import  Swal  from 'sweetalert2'
 import Confetti from 'react-confetti'
 
 const useStyles = makeStyles({

@@ -8,11 +8,16 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-export const PrimaryButton = ({ children, props }) => {
+export const PrimaryButton = ({ children, ...props }) => {
   const styles = useStyles()
   return (
     <Button
-      className={styles.root} type="submit" fullWidth variant="contained" color="primary" {...props} >
+      className={styles.root}
+      type="submit"
+      fullWidth
+      variant="contained"
+      color="primary"
+      {...props} >
       {children}
     </Button>
   )
